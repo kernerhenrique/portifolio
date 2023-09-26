@@ -1,0 +1,36 @@
+body.light-mode {
+  --color-white: #1c1c1c;
+  --background-color: #d3d3d3;
+  --background-color2: #dcdcdc;
+  --color-text-primary: #7648d9;
+  --color-text-secondary: #4f4f4f;
+}
+
+body.dark-mode {
+  --color-white: #ffffff;
+  --background-color: #121212;
+  --background-color2: #151515;
+  --color-text-primary: #7648d9;
+  --color-text-secondary: #9ca3af;
+}
+
+body.light-mode nav {
+  background-color: var(--background-color2)!important;
+}
+
+body.light-mode nav a{
+  color: var(--color-white);
+}
+
+body.light-mode .slider{
+    box-shadow: 1px 1px 7px 0px rgb(74, 74, 74);
+}
+
+.light-mode.home-text-container a{
+  color: var(--background-color2);
+}
+
+body.light-mode footer a,
+body.light-mode footer p {
+  color: var(--color-text-secondary)!important;
+}

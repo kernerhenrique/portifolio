@@ -1,0 +1,636 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.navbar {
+  background-color: #121212 !important;
+  padding: 2.7rem !important;
+  font-size: 1.3rem!important;
+}
+
+
+:root {
+  --color-white: #ffffff;
+  --background-color: #121212;
+  --background-color2: #151515;
+  --color-text-primary: #7648d9;
+  --color-text-secondary: #9ca3af;
+  --color-github: #4078c0;
+  --color-linkedin: #0a66c2;
+  --color-light-mode1: #D3D3D3;
+  --color-light-mode2: #DCDCDC;
+  --color-text-grey: #808080;
+}
+
+body::-webkit-scrollbar {
+  border-radius: 8px;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: #121212;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #7648d9;
+  border-radius: 8px;
+}
+
+/*
+HEADER
+*/
+
+.brand{
+  font-size: 1.5rem;
+}
+
+.navbar-nav a{
+  font-size: 1.2rem;
+}
+
+.toggle-container {
+  text-align: center;
+  margin: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: 1px 1px 7px 0px rgba(255, 255, 255, 1);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.on .slider:before {
+  transform: translateX(20px);
+}
+
+.on input:checked + .slider:before {
+  transform: translateX(0);
+}
+
+/*
+HOME
+*/
+
+.home {
+  background-color: var(--background-color);
+  padding-top: 200px;
+}
+
+.home-text-container {
+  margin-top: 100px;
+}
+
+.home-text-container h2 {
+  color: var(--color-white);
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-block;
+  /*font-weight: normal;*/
+  width: 380px;
+  font-size: 2rem;
+}
+
+.home-text-container h2:after{
+  content: '';
+  display: inline-block;
+  background-color: white;
+  margin-left: 2px;
+  height: 25px;
+  width: 4px;
+  animation: cursor 0.4s infinite;
+}
+
+.home-text-container p {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  margin-top: 15px;
+}
+
+.btn-linkedin {
+  background-color: var(--color-linkedin);
+  border-radius: 5px;
+  color: var(--color-white);
+  width: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-linkedin:hover {
+  color: var(--color-white);
+  transform: scale(1.1);
+  background-color: var(--color-linkedin);
+}
+
+.btn-github {
+  background-color: var(--color-github);
+  border-radius: 5px;
+  color: var(--color-white);
+  margin-left: 50px;
+  width: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-github:hover {
+  color: var(--color-white);
+  transform: scale(1.1);
+  background-color: var(--color-github);
+}
+
+.img-home{
+  height: 450px;
+}
+
+/*
+ABOUT
+*/
+
+.about-container{
+  padding: 4rem;
+  background-color: var(--background-color2);
+}
+
+.about-title {
+  text-align: center;
+  color: var(--color-text-primary);
+  margin-bottom: 70px;
+}
+
+.about-text {
+  margin: auto;
+  text-align: center;
+  color: var(--color-text-secondary);
+  width: 100%;
+  font-size: 1.115rem;
+}
+
+/*
+SKILLS
+*/
+
+.skills-title {
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--color-text-primary);
+  margin-bottom: 0;
+  padding-top: 3rem;
+}
+
+marquee {
+  background-color: var(--background-color);
+  padding: 50px;
+}
+
+marquee div {
+  display: flex;
+  align-items: center;
+}
+
+marquee span {
+  margin: 50px 70px;
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+/*
+EXPERIENCE
+*/
+
+.experience {
+  background-color: var(--background-color2);
+  color: var(--color-white);
+  padding: 70px 0;
+  text-align: center;
+}
+
+.expericne-title {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  margin-bottom: 50px;
+}
+
+.container-experience {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container-places h2 {
+  text-align: center;
+}
+
+.places {
+  width: 193px;
+  padding-top: 26px;
+  text-align: left;
+}
+
+.active-place{
+  border-left: 3px solid var(--color-text-primary);
+  padding: 0.3rem;
+}
+
+.places div {
+  height: 55px;
+  border-left: 2px solid rgb(74, 74, 74);
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+  padding: 18px 0 0 36px;
+}
+
+.places p{
+  cursor: pointer;
+}
+
+.places div:hover {
+  transform: scale(1.1);
+  color: var(--color-text-primary);
+}
+
+.places div.active {
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-description {
+  padding-left: 80px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.experience-description div {
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.experience-description div h2 {
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.experience-description div p {
+  padding-left: 5rem;
+  font-weight: 500;
+  font-size: 1.12rem;
+}
+
+.experience-description p {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 636px;
+}
+
+.experience-description h4 {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text-primary);
+}
+
+/*
+PROJECTS STYLE
+*/
+
+.projects-container{
+  padding: 4rem;
+  background-color: var(--background-color);
+}
+
+.projects-title{
+  text-align: center;
+  color: var(--color-text-primary);
+  margin-bottom: 20px;
+}
+
+.btn-project{ 
+  color: var(--color-white);
+  border: 1px solid var(--color-text-primary);
+  margin-top: 20px;
+}
+
+.btn-project:hover{
+  color: var(--color-white);
+  border-color: var(--color-text-primary);
+}
+
+.pokemon-project{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pokemon-project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pokemon-project-description h3{
+  color: var(--color-text-primary);
+}
+
+.pokemon-project-description p{
+  color: var(--color-text-secondary);
+}
+
+.landingPage-project{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.landingPage-project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landingPage-project-description h3{
+  color: var(--color-text-primary);
+}
+
+.landingPage-project-description p{
+  color: var(--color-text-secondary)
+}
+
+.cardapio-project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cardapio-project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardapio-project-description h3{
+  color: var(--color-text-primary);
+}
+
+.cardapio-project-description p{
+  color: var(--color-text-secondary)
+}
+
+.space-project{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.space-project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.space-project-description h3{
+  color: var(--color-text-primary);
+}
+
+.space-project-description p{
+  color: var(--color-text-secondary)
+}
+
+
+/*
+FOOTER STYLE
+*/
+
+.footer-inside-container {
+  background-color: var(--background-color2);
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.footer-link {
+  color: white !important;
+}
+
+.text-body-secondary {
+  color: white !important;
+}
+
+.name{
+  color: var(--color-text-primary);;
+}
+
+/*
+MEDIA QUERRYS
+*/
+
+@media(max-width:1200px) {
+  .img-home-container{
+    display: none;
+  }
+
+  .home-text-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+@media(max-width:845px){
+  .pokemon-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pokemon-project img{
+    width: 300px;
+  }
+
+  .pokemon-project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pokemon-project-description p{
+    text-align: center;
+  }
+
+  .landingPage-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landingPage-project img{
+    width: 300px;
+  }
+
+  .landingPage-project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPage-project-description p{
+    text-align: center;
+  }
+
+  .cardapio-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardapio-project img{
+    width: 300px;
+  }
+
+  .cardapio-project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardapio-project-description p{
+    text-align: center;
+  }
+
+  .space-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .space-project img{
+    width: 300px;
+  }
+
+  .space-project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .space-project-description p{
+    text-align: center;
+  }
+}
+
+@media(max-width: 950px) {
+  .container-experience {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .places {
+    display: flex;
+    gap: 20px;
+    width: auto;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+
+  .active-place{
+    border-bottom: 5px solid var(--color-text-primary);
+    border-left: none;
+    padding: 0.1rem;
+  }
+
+  .places div {
+    border-left: none;
+    padding: 18px 0;
+  }
+
+  .experience-description {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .experience-description div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-description div h2 {
+    font-size: 1.25rem;
+  }
+
+  .experience-description div p {
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .experience-description p {
+    font-size: 1.125rem;
+  }
+
+}
+
+@media (max-width:660px) {
+  .experience-description p{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 610px){
+  .places{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 423px){
+  .home-text-container p{
+    font-size: 1.06rem;
+  }
+}

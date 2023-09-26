@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique Kerner - Portifólio</title>
+  <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/light-dark-mode.css">
+  <script src="https://kit.fontawesome.com/d0be5e4daf.js" crossorigin="anonymous"></script>
+  <script src=”https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js”></script>
+</head>
+
+<body class="dark-mode light-mode">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
+      <a class="navbar-brand brand" href="#">Henrique.DEV</a>
+      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-link active ms-auto"><a href="#home">Início</a><span class="sr-only"></span></a>
+          <li class="nav-item nav-link ms-auto"><a href="#about">Sobre</a></li>
+          <li class="nav-item nav-link ms-auto"><a href="#skills">Skills</a></li>
+          <li class="nav-item nav-link ms-auto"><a href="#experience">Eperiências</a></li>
+          <li class="nav-item nav-link ms-auto" data-toggle="modal" data-target="#exampleModal"><a href="#projects">Projetos</a></li>
+          <li>
+            <div class="toggle-container">
+                <label class="switch on">
+                   <input type="checkbox" id="mode-toggle" checked>
+                      <span class="slider"></span>
+                 </label>
+             </div>
+        </li>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-12">
+          <div class="home-text-container">
+            <h2 id="text-home">Olá, me chamo Henrique Kerner, desenvolvedor Front End!</h2>
+            <p>Sou um desenvolvedor Front End que está sempre<br> em busca de desafios, melhorias e sempre me<br>
+              atualizando sobre as tecnologias do mercado.</p>
+            <a href="https://www.linkedin.com/in/henrique-kerner-a509b71b1/" target="_blank" class="btn btn-linkedin mt-3">Linkedin</a>
+            <a href="https://github.com/kernerhenrique" target="_blank" class="btn btn-github mt-3">Github</a>
+          </div>
+        </div>
+        <div class="col-xl-6 d-none d-xl-block">
+          <div class="img-home-container">
+            <img src="src/img/illustration.png" alt="" class="img-home img-fluid" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container-fluid about-container">
+    <div class="row">
+      <h2 class="about-title">Um pouco sobre mim</h2>
+      <p class="about-text">Me chamo Henrique Kerner, tenho 23 anos e sou estudante de Ciencia da Computação do 7º
+        peíodo na Universidade Vila Velha. Há pouco mais de
+        1 ano, venho focando meus estudos ná área de Front End através de cursos online e estágios. Hoje estou
+        concorrendo a uma bolsa de 5 mêses de estudo
+        com foco em angular para poder obter ainda mais conhecimento e poder me tornar um melhor profissional.
+        Abaixo, falo um pouco mais da minha experiência na área do front end
+        principalmente através de crusos e de estágios onde pratico meu lado profissional.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="container-fluid skills">
+    <div class="row">
+      <h2 class="skills-title">Skills</h2>
+      <marquee behavior="alternate">
+        <div>
+          <span>
+            Front-End
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            Angular
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            Typscript
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            HTML
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            GIT
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            JavaScript
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            Programação
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+          <span>
+            CSS
+          </span>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 640 512">
+              <style>
+                svg {
+                  fill: #7648d9
+                }
+              </style>
+              <path
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+            </svg>
+          </div>
+        </div>
+      </marquee>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2 class="expericne-title">Experiências profissionais e Certificados</h2>
+    <div class="container-experience">
+      <div class="container-places">
+        <h2>Experiência</h2>
+        <div class="places">
+          <div class="active link abc" id="marketing365">
+            <p class="active-place">Marketing 365</p>
+          </div>
+          <div class="link" id="leadmasters">
+            <p>Lead Masters</p>
+          </div>
+          <div class="link" id="superticket">
+            <p>Superticket</p>
+          </div>
+          <div class="link" id="arcelormittal">
+            <p>ArcelorMittal</p>
+          </div>
+          <div class="link" id="alura">
+            <p>(Certificados)</p>
+          </div>
+        </div>
+      </div>
+      <div class="experience-description">
+        <div class="title-experiences">
+          <h2 id="titulo1"></h2>
+          <p id="data1"></p>
+        </div>
+        <h4 id="titulo2"></h4>
+        <p id="descricao"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container-fluid projects-container">
+    <div class="row">
+      <h2 class="projects-title">Projetos</h2>
+      <div class="projects">
+        <div class="pokemon-project__container">
+          <div class="pokemon-project">
+            <img src="src/img/Design sem nome-1.png" alt="Pokemon Image">
+            <div class="pokemon-project-description">
+              <h3>Pokedex</h3>
+              <p>Projeto de uma Pokdex de pokemons que foi <br>desenvolvida em:</p>
+              <div>
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26;"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #264de4;"></i>
+                <i class="fa-brands fa-js fa-2xl" style="color: #f0db4f;"></i>
+              </div>
+              <div><a href="#" class="btn btn-project">Visualização em breve</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="landingPage-project__container">
+          <div class="landingPage-project">
+            <img src="src/img/Design sem nome-2.png" alt="Landing Page Image">
+            <div class="landingPage-project-description">
+              <h3>Landing Page</h3>
+              <p>Primeiro projeto bem simples que fiz de uma <br>Landing Page. Desenvolvida em:</p>
+              <div>
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26;"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #264de4;"></i>
+              </div>
+              <div><a href="#" class="btn btn-project">Visualização em breve</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="cardapio-project__container">
+          <div class="cardapio-project">
+            <img src="src/img/Design sem nome-3.png" alt="Landing Page Image">
+            <div class="cardapio-project-description">
+              <h3>Cardápio Online</h3>
+              <p>Projeto de um cardápio online responsivo, <br>desenvolvido em:</p>
+              <div>
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26;"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #264de4;"></i>
+                <i class="fa-brands fa-js fa-2xl" style="color: #f0db4f;"></i>
+              </div>
+              <div><a href="#" class="btn btn-project">Visualização em breve</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="space-project__container">
+          <div class="space-project">
+            <img src="src/img/Design_sem_nome-coming-soon.png" alt="Space Image">
+            <div class="space-project-description">
+              <h3>Space</h3>
+              <p>-</p>
+              <div>
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26;"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #264de4;"></i>
+                <i class="fa-brands fa-js fa-2xl" style="color: #f0db4f;"></i>
+              </div>
+              <div><a href="#" class="btn btn-project">Visualização em breve</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid footer-inside-container light-mode">
+    <div class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary footer-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary footer-link">Sobre</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary footer-link">Skills</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary footer-link">Experiências</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary footer-link">Projetos</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; Developed by <span class="name">Henrique Kerner</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="src/js/app.js"></script>
+
+</body>
+
+</html>
