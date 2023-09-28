@@ -43,7 +43,7 @@ function atualizarConteudo(paragrafo) {
       data1.textContent = "Jun 2021 - Jan 2022";
       titulo2.textContent = "Lead Masters";
       descricao.textContent =
-        "Empresa onde novamente tive um contato com o Wordpress, dessa vez mais aprofundado, mas onde também tinha o trabalho de desenvolver sites e landing pages. Também tive a oportunidade de conhecer o básico de edição de vídeos no Adobe Premiere e After Effects";
+        "Empresa onde novamente tive um contato com o Wordpress, dessa vez mais aprofundado, mas onde também tinha o trabalho de desenvolver sites e landing pages. Também tive a oportunidade de conhecer o básico de edição de vídeos no Adobe Premiere e After Effects.";
       break;
     case "Superticket":
       titulo1.textContent = "Análise de Antifraude";
