@@ -36,7 +36,7 @@ function atualizarConteudo(paragrafo) {
       data1.textContent = "Nov 202 - Jun 2021";
       titulo2.textContent = "Marketing 365";
       descricao.textContent =
-        "Primeira empresa onde trabalhei como desenvolvedor de sites e landing pages em wordpress. Foi onde tive meu primeiro contato profissional com algo que futuramente iria me levar até o desenvolvimento Front End.";
+        "Primeira empresa onde trabalhei como desenvolvedor de sites e landing pages em Wordpress. Foi onde tive meu primeiro contato profissional com algo que futuramente iria me levar até o desenvolvimento Front End.";
       break;
     case "Lead Masters":
       titulo1.textContent = "Desenvolvimento Wordpress";
@@ -50,14 +50,14 @@ function atualizarConteudo(paragrafo) {
       data1.textContent = "Mai 2022 - Abr 2023";
       titulo2.textContent = "Superticket";
       descricao.textContent =
-        "Trabalho onde fugi um pouco do desenvolvimento e trabalhei um pouco com análise de antifraude por quase 1 ano. Um lugar onde pude ter uma boa evolução no meu lado profissional por ser uma empresa que estava em constante crescimento e precisava estar sempre por dentro de todas as demandas.";
+        "Trabalho onde fugi um pouco do desenvolvimento e trabalhei um pouco com análise de antifraude por 1 ano. Um lugar onde pude ter uma boa evolução no meu lado profissional por ser uma empresa que estava em constante crescimento e precisava estar sempre por dentro de todas as demandas.";
       break;
     case "ArcelorMittal":
       titulo1.textContent = "Desenvolvimento Front End";
       data1.textContent = "Jun 2023 - Atual";
       titulo2.textContent = "ArcelorMittal";
       descricao.textContent =
-        "Primeira oportunidade de trabalhar em uma emrpresa multinacional onde atuo como estágiário de FrontEnd com foco no Angular. Empresa onde em pouco tempo me ensionou sobre ferramentas essenciais na vida de um desenvolvedor, ferramentas que uso diariamente no meu tempo de trabalho.";
+        "Primeira oportunidade de trabalhar em uma emrpresa multinacional onde atuo como estágiário de Front End com foco em Angular. Empresa onde em pouco tempo me ensionou sobre ferramentas essenciais na vida de um desenvolvedor, ferramentas que uso diariamente no meu tempo de trabalho.";
       break;
       case "(Certificados)":
         titulo1.textContent = "Certificados online";
