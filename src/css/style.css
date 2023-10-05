@@ -397,7 +397,7 @@ PROJECTS STYLE
 
 .cardapio-project{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
