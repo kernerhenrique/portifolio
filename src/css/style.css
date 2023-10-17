@@ -436,6 +436,26 @@ PROJECTS STYLE
   color: var(--color-text-secondary)
 }
 
+.codeChella-project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.codeChella-project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.codeChella-project-description h3{
+  color: var(--color-text-primary);
+}
+
+.codeChella-project-description p{
+  color: var(--color-text-secondary)
+}
+
 
 /*
 FOOTER STYLE
