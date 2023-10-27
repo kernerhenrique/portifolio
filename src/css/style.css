@@ -358,7 +358,7 @@ PROJECTS STYLE
 
 .pokemon-project{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -378,7 +378,7 @@ PROJECTS STYLE
 
 .landingPage-project{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
@@ -418,7 +418,7 @@ PROJECTS STYLE
 
 .space-project{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -438,7 +438,7 @@ PROJECTS STYLE
 
 .codeChella-project{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
